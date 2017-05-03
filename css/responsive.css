@@ -1,0 +1,66 @@
+@media screen and (max-width: 1275px) {
+
+	h1, h2 { line-height: 1.1em }
+
+	header, .servises, .video-pl, .social, .inform {
+		width: 95%;
+	}
+
+	.nav {display: none;}
+
+	.logo {margin: 25px 0;}
+
+	#touch-menu {
+		display: block;
+		float: right;
+		margin-top: 20px;
+	}
+
+	.srvs-box {margin: 0 1%;}
+
+	.rec-work {
+		width: 90%;
+		text-align: center;
+	}
+
+	.rec-work a {margin: 0 61px;}
+
+	.first, .last {display: inline-block;}
+	.last {margin-top: 20px;}
+}
+
+@media screen and (max-width: 978px) {
+
+	header, .servises, .video-pl {width: 60%;}
+
+	.servises {padding-top: 20px;}
+	.srvs-box {margin-top: 75px;}
+
+	.last {margin-top: 0;}
+
+	.last a {margin: 15 0;}
+
+	.rec-work {
+		width: 100%;
+		display: block;
+	}
+
+	.rec-work a {
+		margin: 0;
+		padding: 15px 50px;
+		float: none;
+	}
+
+	.social, .inform {width: 95%}
+}
+
+@media screen and (max-width: 548px) {
+	header, .servises, .video-pl, .social, .inform {
+		width: 90%;
+	}
+
+	.social a {
+		margin: 0 2%;
+	}
+
+}
