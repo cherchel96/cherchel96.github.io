@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var touch = $('#touch-menu');
+			    var menu = $('.nav');
+			 
+			    $(touch).on('click', function(e) {
+			        e.preventDefault();
+			        menu.slideToggle();
+			    });
+			    $(window).resize(function(){
+			        var wid = $(window).width();
+			        if(wid > 760 && menu.is(':hidden')) {
+			            menu.removeAttr('style');
+			        }
+			    });
+			});
+		</script>
+	</head>
+	<body>
+		<div class="overlay"></div>
+		<header>
+			<div class="top-line">
+				<div class="container">
+					<a href="#" id="touch-menu"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 48 48" width="48"><path d="M0 0h48v48h-48z" fill="none"/><path
+					fill="#fff" d="M6 36h36v-4h-36v4zm0-10h36v-4h-36v4zm0-14v4h36v-4h-36z"/></svg></a>
+					<nav>
+						<ul class="nav clear">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Информация</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Прайс-лист</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="cols col-12">
+						<a href="index.html"><img src="images/logo.png" alt="Sait"></a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="cols col-4">
+						<h2>БЫСТРО</h2>
+						<span class="rhomb"></span>
+						<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА<br>
+						ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ<br>
+						ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+					</div>
+					<div class="cols col-4">
+						<h2>КРУТО</h2>
+						<span class="rhomb"></span>
+						<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br>
+						МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!<br>
+						ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+					</div>
+					<div class="cols col-4">
+						<h2>ДОРОГО</h2>
+						<span class="rhomb"></span>
+						<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И<br>
+						НЕ МОГУТ СТОИТЬ ДЕШЕВО.К ТОМУ ЖЕ, РАЗВЕ ЦЕНА<br>
+						НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="cols col-6">
+						<div class="left-column">
+							<h2>НОВОСТИ</h2>
+							<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ <br>
+							МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br>
+							<span class="date">25 сентября</span></p>
+							<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» <br>
+							СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕТСВА ТИТУЛОВ<br>
+							И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ <br>
+							<span class="date">19 сентября</span></p>
+							<a class="btn news-btn" href="#">ВСЕ НОВОСТИ</a>
+						</div>
+					</div>
+					<div class="cols col-6">
+						<div class="right-column">
+							<h3>ФОТОГАЛЕРЕЯ</h3>
+							<div class="gallery">
+								<img src="images/pic_1.jpg">
+								<div class="gallery-btn">
+									<button class="btn gallery-btn-prev">НАЗАД</button>
+									<button class="btn gallery-btn-next">ВПЕРЕД</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="cols col-6">
+						<div class="left-column">
+							<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+							<p>BARBERSHOP «BORODINSKI» <br>
+							АДРЕС: Г. МОСКВА, УЛ. СОБАКИ ПАВЛОВА, Д. 13 <br>
+							ТЕЛЕФОН: +7 (495) 666-02-666</p>
+							<p>ВРЕМЯ РАБОТЫ: <br>
+							ПН — ПТ: С 10:00 ДО 22:00<br>
+							СБ — ВС: С 10:00 ДО 19:00</p>
+							<div class="contact-btn">
+								<a class="btn address-btn" href="#">КАК ПРОЕХАТЬ</a>
+								<a class="btn work-time-btn" href="#">ОБРАТНАЯ СВЯЗЬ</a>
+							</div>
+						</div>
+					</div>
+					<div class="cols col-6">
+						<div class="right-column">
+							<h2>ЗАПИСАТЬСЯ</h2>
+							<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ<br>
+							С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+							<form class="index-form" action="#" method="post">
+								<fieldset>
+									<input type="text" name="date" placeholder="ДАТА">
+									<input type="text" name="time" placeholder="ВРЕМЯ">
+									<input type="text" name="name" placeholder="ВАШЕ ИМЯ">
+									<input type="text" name="phone" placeholder="ТЕЛЕФОН">
+								</fieldset>
+								<fieldset>
+									<input class="btn" type="submit" value="ОТПРАВИТЬ">
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="address-social-design clear">
+						<div class="cols col-4">
+							<div class="address">
+								<p>BARBERSHOP «BORODINSKI»<br>
+								АДРЕС: Г. МОСКВА, УЛ. СОБАКИ ПАВЛОВА, Д. 13<br>
+								ТЕЛЕФОН: +7 (495) 666-02-666</p>
+							</div>
+						</div>
+						<div class="cols col-4">
+							<div class="social">
+								<h2>ДАВАЙТЕ ДРУЖИТЬ!</h2>
+								<a href="#" class="btn social-vk-btn">Вконтакте</a>
+								<a href="#" class="btn social-fb-btn">Facebook</a>
+								<a href="#" class="btn social-inst-btn">Instagram</a>
+							</div>
+						</div>
+						<div class="cols col-4">
+							<div class="design">
+								<h2>ДИЗАЙН САЙТА:</h2>
+								<a href="#" class="btn design-btn">CLUKHACHKO.RU</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
